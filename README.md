@@ -28,12 +28,12 @@ A GARCH(1,1) model was fitted to daily log returns to understand market volatili
 * cript: Modularized R scripts for reproducibility.
   * 01_data_cleaning_and_eda.R: Data merging, log-transformations, and STL decomposition.
   * 02_arimax_forecasting.R: VIF feature selection and ARIMA/ARIMAX model training.
-  * 03_garch_volatility.R: Conditional variance modeling using `rugarch`.
+  * 03_garch_volatility.R: Conditional variance modeling using rugarch.
 * images: Visualizations of model diagnostics and forecasts, including STL decomposition and residual plots.
 
 ## 🚀 How to Run
-1. Clone this repository: `git clone https://github.com/NanLi-1217/Cocoa-Price-Volatility-Forecasting.git`
-2. Ensure you have R installed along with the required packages: `install.packages(c("tidyverse", "forecast", "rugarch", "tseries", "car", "Metrics"))`
+1. Clone this repository: git clone https://github.com/NanLi-1217/Cocoa-Price-Volatility-Forecasting.git
+2. Ensure you have R installed along with the required packages: install.packages(c("tidyverse", "forecast", "rugarch", "tseries", "car", "Metrics"))
 3. Run the scripts in the script folder sequentially.
 
 ## 🔮 Future Work
