@@ -32,7 +32,7 @@ A GARCH(1,1) model was fitted to daily log returns to understand market volatili
 * images: Visualizations of model diagnostics and forecasts, including STL decomposition and residual plots.
 
 ## 🚀 How to Run
-1. Clone this repository: git clone https://github.com/NanLi-1217/Cocoa-Price-Volatility-Forecasting.git
+1. Clone this repository: git clone https://github.com/NanLi-1217/Cocoa-Commodity-Volatility-Forecasting
 2. Ensure you have R installed along with the required packages: install.packages(c("tidyverse", "forecast", "rugarch", "tseries", "car", "Metrics"))
 3. Run the scripts in the script folder sequentially.
 
