@@ -12,14 +12,11 @@ This project introduces statistical modeling methods to predict daily cocoa pric
 ## 📊 Key Business Insights & Results
 
 ### 1. Climate-Driven Forecasting (ARIMAX vs. ARIMA)
-The ARIMAX model significantly outperformed the baseline univariate ARIMA model by incorporating significant weather variables, such as precipitation and temperature. 
-* **Model Fit:** The ARIMAX model improved the AIC dramatically (by over 12,500 units), indicating a much stronger explanation of price dynamics.
-* **Responsiveness:** As shown below, ARIMAX tracks actual price peaks more closely, capturing the responsiveness to climate conditions that traditional ARIMA misses.
-
+Proved that external climate factors (e.g., lagged precipitation and temperature) act as leading indicators for cocoa price shocks. By incorporating these exogenous variables, the ARIMAX model improved the AIC by over 12,500 units compared to the univariate baseline, successfully capturing price spikes that traditional models missed. This provides actionable signals for proactive commodity procurement.
 ![ARIMAX vs ARIMA](images/arimax_forecast.png)
 
 ### 2. Market Risk & Volatility (GARCH)
-A GARCH(1,1) model was fitted to daily log returns to understand market volatility and conditional variance. The results demonstrated strong volatility persistence ($\alpha + \beta = 0.96$), indicating long memory in variance shocks—a crucial metric for options pricing and risk hedging in commodities.
+Fitted a GARCH(1,1) model to quantify conditional variance, revealing a strong volatility persistence ($\alpha + \beta = 0.96$). This confirms a "long memory" in market shocks, providing a critical quantitative foundation for options pricing and risk hedging strategies in highly volatile commodity markets.
 
 ![GARCH Volatility](images/garch_volatility.png)
 
